@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+//* Titols formatting
+h2 {
+    font-size: $titles_h2;
+    color: $color_titles;
+    text-transform: uppercase;
+}
+h3 {
+    font-family: 'Teko', sans-serif;
+    font-size: $img_text;
+    text-transform: uppercase;
+    color: $pasta_color1;
+}
+.container {
+    max-width: $container;
+    width: 100%;
+    margin: 0 auto;
+}
+.active {
+    background-color: $color_nav_hover;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}

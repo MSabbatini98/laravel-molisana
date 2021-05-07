@@ -1,3 +1,53 @@
-body {
-  background-color: blue;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+h2 {
+  font-size: 26px;
+  color: #002d73;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: "Teko", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #477d9b;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.active {
+  background-color: #b2e5fc;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header .logo {
+  text-align: center;
+}
+header .logo img {
+  margin-top: 20px;
+  width: 200px;
+  height: auto;
+}
+header .main_nav ul {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+header .main_nav ul li {
+  list-style: none;
+  font-size: 22px;
+  padding: 20px 10px;
+  margin: 0 5px;
 }

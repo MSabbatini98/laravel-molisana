@@ -1,4 +1,5 @@
-//
-body {
-    background-color: blue;
-}
+@import 'css_partials/variables.scss';
+@import 'css_partials/common.scss';
+@import 'css_partials/header.scss';
+@import 'css_partials/main.scss';
+@import 'css_partials/footer.scss';
