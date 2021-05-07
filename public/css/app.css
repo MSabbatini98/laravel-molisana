@@ -11,10 +11,8 @@ h2 {
 }
 
 h3 {
-  font-family: "Teko", sans-serif;
   font-size: 18px;
   text-transform: uppercase;
-  color: #477d9b;
 }
 
 .container {
@@ -30,6 +28,10 @@ h3 {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.bg_main {
+  border: red 1px solid;
 }
 
 header .logo {
@@ -50,4 +52,18 @@ header .main_nav ul li {
   font-size: 22px;
   padding: 20px 10px;
   margin: 0 5px;
+}
+
+main .box_container {
+  margin: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+main .box_container .box {
+  width: calc((100% / 3) - 15px );
+  margin: 7.5px;
+}
+main .box_container .box img {
+  display: block;
+  width: 100%;
 }

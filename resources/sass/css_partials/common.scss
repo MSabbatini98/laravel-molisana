@@ -4,6 +4,8 @@
     margin: 0;
 }
 
+// font-family: 'Teko', sans-serif;
+
 //* Titols formatting
 h2 {
     font-size: $titles_h2;
@@ -11,11 +13,9 @@ h2 {
     text-transform: uppercase;
 }
 h3 {
-    font-family: 'Teko', sans-serif;
     font-size: $img_text;
     text-transform: uppercase;
-    color: $pasta_color1;
-}
+ }
 .container {
     max-width: $container;
     width: 100%;
@@ -27,4 +27,9 @@ h3 {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+// Sfondi{ div
+.bg_main {
+    border: red 1px solid;
 }
