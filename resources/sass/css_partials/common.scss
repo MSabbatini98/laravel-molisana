@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Open Sans', sans-serif;
 }
 
 // font-family: 'Teko', sans-serif;
@@ -13,9 +14,10 @@ h2 {
     text-transform: uppercase;
 }
 h3 {
-    font-size: $img_text;
+    font-size: $titles;
     text-transform: uppercase;
- }
+    color: $color_footer;
+}
 .container {
     max-width: $container;
     width: 100%;
@@ -29,7 +31,13 @@ a {
     color: inherit;
 }
 
-// Sfondi{ div
-.bg_main {
-    border: red 1px solid;
+@for $i from 1 through 10 {
+    .pt_#{$i} {
+    padding-top: 10px * $i;
+    }
+}
+.clearfix {
+    content: "";
+    display: table;
+    clear: both;
 }

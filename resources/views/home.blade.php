@@ -12,36 +12,18 @@
 
     {{-- Google fonts --}}
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&family=Teko:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 
 </head>
 <body>
     {{-- HEADER --}}
-    <header>
-        <div class="container">
-            <div class="logo">
-                <img src=" {{ asset('images/marchio-sito-test.png') }} " alt="Logo della pasta molisana">
-            </div>
-            <nav class="main_nav">
-                <ul>
-                    <li >
-                        <a href="#">Home</a>
-                    </li>
-                    <li class="active">
-                        <a href="#">Prodotti</a>
-                    </li>
-                    <li>
-                        <a href="#">News</a>
-                    </li>
-                </ul>
-            </nav>     
-        </div>
-    </header>
+    @include('blade_partials.header')
 
     {{-- MAIN  --}}
-    <main class="bg_main">
+    <main >
         <div class="container">
+
             {{-- pasta lunga --}}
             <section id="pasta_lunga">
                 <h2>Le lunghe</h2>
@@ -85,8 +67,7 @@
     </main>
 
     {{-- FOOTER  --}}
-    <footer>
+    @include('blade_partials.footer')
 
-    </footer>
 </body>
 </html>

@@ -1,5 +1,8 @@
 main {
-
+    background-image: url("/images/fondo-pag-speciali.jpg");
+    background-position: center;
+    padding: 20px 0;
+    
     .box_container {
         margin: 10px 0;
         display: flex;
@@ -15,10 +18,4 @@ main {
             }
         }
     }
-
-
-
-
-
-
 }

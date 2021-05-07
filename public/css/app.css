@@ -2,6 +2,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: "Open Sans", sans-serif;
 }
 
 h2 {
@@ -11,8 +12,9 @@ h2 {
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 22px;
   text-transform: uppercase;
+  color: #848d9b;
 }
 
 .container {
@@ -30,8 +32,50 @@ a {
   color: inherit;
 }
 
-.bg_main {
-  border: red 1px solid;
+.pt_1 {
+  padding-top: 10px;
+}
+
+.pt_2 {
+  padding-top: 20px;
+}
+
+.pt_3 {
+  padding-top: 30px;
+}
+
+.pt_4 {
+  padding-top: 40px;
+}
+
+.pt_5 {
+  padding-top: 50px;
+}
+
+.pt_6 {
+  padding-top: 60px;
+}
+
+.pt_7 {
+  padding-top: 70px;
+}
+
+.pt_8 {
+  padding-top: 80px;
+}
+
+.pt_9 {
+  padding-top: 90px;
+}
+
+.pt_10 {
+  padding-top: 100px;
+}
+
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 header .logo {
@@ -52,8 +96,14 @@ header .main_nav ul li {
   font-size: 22px;
   padding: 20px 10px;
   margin: 0 5px;
+  font-weight: 700;
 }
 
+main {
+  background-image: url("/images/fondo-pag-speciali.jpg");
+  background-position: center;
+  padding: 20px 0;
+}
 main .box_container {
   margin: 10px 0;
   display: flex;
@@ -66,4 +116,47 @@ main .box_container .box {
 main .box_container .box img {
   display: block;
   width: 100%;
+}
+
+footer {
+  background-image: url("/images/footer-montagne-bottom.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  padding: 30px 0 60px 0;
+  color: #848d9b;
+}
+footer .info {
+  width: 33%;
+  float: left;
+  padding: 20px;
+  margin-top: 30px;
+}
+footer .footer_menu {
+  width: 66%;
+  float: right;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+footer .footer_menu .column {
+  margin-top: 30px;
+  width: 50%;
+  padding: 20px;
+}
+footer .footer_menu .column1 {
+  order: 1;
+}
+footer .footer_menu .column2 {
+  text-transform: capitalize;
+  order: 3;
+}
+footer .footer_menu .column3 {
+  order: 2;
+}
+footer ul li {
+  list-style: none;
+  line-height: 2;
+}
+footer ul li:first-of-type {
+  margin-top: 20px;
 }
