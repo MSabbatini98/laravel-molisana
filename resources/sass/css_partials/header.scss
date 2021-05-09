@@ -1,4 +1,7 @@
 header {
+    .container {
+        padding: 0px;
+    }
     .logo {
         text-align: center;
 
@@ -11,7 +14,21 @@ header {
     .main_nav {
         // border: blue 2px solid;
         ul {
-            margin-top: 30px;
+            margin-top: 30px;header {
+    .logo {
+        text-align: center;
+
+        img{
+            margin-top: 20px;
+            width: 200px;
+            height: auto;
+        }
+    }
+    .main_nav {
+        margin-top: 30px;
+        // border: blue 2px solid;
+
+        ul {
             display: flex;
             justify-content: center;
 
@@ -23,5 +40,93 @@ header {
                 font-weight: 700;
             }
         }
+        &_burger{
+            display: none;
+            font-size: 40px;
+            text-align: center;
+            color: $main_color;
+        }
+    }
+}
+
+            display: flex;
+            justify-content: center;
+
+            li {
+                list-style: none;
+                font-size: $titles;
+                padding: 20px 10px;
+                margin: 0 5px;
+                font-weight: 700;
+            }
+        }
+        &_burger{
+            display: none;
+            font-size: 40px;
+            padding: 7.5px 0;
+            text-align: center;
+            color: $main_color;
+        }
+    }
+}
+
+
+//!! Media query : 
+// ! Large : 0-1400px
+@media screen and (max-width: $mq_large) {
+
+    *{
+        color: blue!important;
+    }
+    
+}
+
+// ! Medium : 0-850px
+@media screen and (max-width: $mq_medium) {
+
+    *{
+        color: red!important;
+    }
+    header {
+        .main_nav {
+            // border: blue 2px solid;
+            ul {
+                display: none;
+            }
+            &_burger{
+                margin-top: 30px;
+                display: block;
+                animation: ;
+            }
+        }
+    }
+    
+}
+
+// ! Small : 0-450px
+@media screen and (max-width: $mq_small) {
+
+    *{
+        color: greenyellow!important;
+    }
+
+}
+
+// ?? Animations 
+.FadeInTop {
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(.25, 0, .15, 1);
+    animation-name: fadeInTop;
+}
+@keyframes fadeInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    75% {
+        transform: none;
+    }
+    100% {
+        opacity: 1;
     }
 }

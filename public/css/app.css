@@ -79,20 +79,31 @@ a {
   clear: both;
 }
 
+@media screen and (max-width: 1400px) {
+  * {
+    color: blue !important;
+  }
+}
 @media screen and (max-width: 850px) {
   * {
     color: red !important;
+  }
+
+  .container {
+    padding: 5%;
   }
 }
 @media screen and (max-width: 450px) {
   * {
     color: greenyellow !important;
   }
-}
-@media screen and (max-width: 1400px) {
+
   .container {
-    color: blue !important;
+    padding: 10%;
   }
+}
+header .container {
+  padding: 0px;
 }
 header .logo {
   text-align: center;
@@ -107,6 +118,34 @@ header .main_nav ul {
   display: flex;
   justify-content: center;
 }
+header .main_nav ul header .logo {
+  text-align: center;
+}
+header .main_nav ul header .logo img {
+  margin-top: 20px;
+  width: 200px;
+  height: auto;
+}
+header .main_nav ul header .main_nav {
+  margin-top: 30px;
+}
+header .main_nav ul header .main_nav ul {
+  display: flex;
+  justify-content: center;
+}
+header .main_nav ul header .main_nav ul li {
+  list-style: none;
+  font-size: 22px;
+  padding: 20px 10px;
+  margin: 0 5px;
+  font-weight: 700;
+}
+header .main_nav ul header .main_nav_burger {
+  display: none;
+  font-size: 40px;
+  text-align: center;
+  color: #467c9a;
+}
 header .main_nav ul li {
   list-style: none;
   font-size: 22px;
@@ -114,7 +153,37 @@ header .main_nav ul li {
   margin: 0 5px;
   font-weight: 700;
 }
+header .main_nav_burger {
+  display: none;
+  font-size: 40px;
+  padding: 7.5px 0;
+  text-align: center;
+  color: #467c9a;
+}
 
+@media screen and (max-width: 1400px) {
+  * {
+    color: blue !important;
+  }
+}
+@media screen and (max-width: 850px) {
+  * {
+    color: red !important;
+  }
+
+  header .main_nav ul {
+    display: none;
+  }
+  header .main_nav_burger {
+    margin-top: 30px;
+    display: block;
+  }
+}
+@media screen and (max-width: 450px) {
+  * {
+    color: greenyellow !important;
+  }
+}
 main {
   background-image: url("/images/fondo-pag-speciali.jpg");
   background-position: center;
@@ -134,6 +203,16 @@ main .box_container .box img {
   width: 100%;
 }
 
+@media screen and (max-width: 850px) {
+  main .box_container .box {
+    width: calc(50% - 15px);
+  }
+}
+@media screen and (max-width: 450px) {
+  main .box_container .box {
+    width: 100%;
+  }
+}
 footer {
   background-image: url("/images/footer-montagne-bottom.jpg");
   background-position: bottom;

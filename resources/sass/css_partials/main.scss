@@ -2,7 +2,7 @@ main {
     background-image: url("/images/fondo-pag-speciali.jpg");
     background-position: center;
     padding: 20px 0;
-    
+
     .box_container {
         margin: 10px 0;
         display: flex;
@@ -19,3 +19,36 @@ main {
         }
     }
 }
+
+
+//!! Media query : 
+// ! Large : 0-1400px
+@media screen and (max-width: $mq_large) {
+
+
+}
+
+// ! Medium : 0-850px
+@media screen and (max-width: $mq_medium) {
+
+    main {
+        .box_container {
+            .box{
+                width: calc(50% - 15px);
+            }
+        }
+    }
+}
+
+// ! Small : 0-450px
+@media screen and (max-width: $mq_small) {
+
+    main {
+        .box_container {
+            .box{
+                width: 100%;
+            }
+        }
+    }
+}
+

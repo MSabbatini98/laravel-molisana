@@ -3,6 +3,11 @@
         <div class="logo">
             <img src=" {{ asset('images/marchio-sito-test.png') }} " alt="Logo della pasta molisana">
         </div>
+        <nav class="main_nav_burger">
+            <div class="burger_menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
         <nav class="main_nav">
             <ul>
                 <li >

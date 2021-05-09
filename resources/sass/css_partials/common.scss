@@ -44,26 +44,33 @@ a {
 }
 
 //!! Media query : 
-// ! Small : 0-450px
+// ! Large : 0-1400px
+@media screen and (max-width: $mq_large) {
+
+    *{
+        color: blue!important;
+    }
+}
+
+// ! Medium : 0-850px
 @media screen and (max-width: $mq_medium) {
 
     *{
         color: red!important;
     }
+    .container{
+        padding: 5%;
+    }
 }
 
-// ! Medium : 451-850px
+// ! Small : 0-450px
 @media screen and (max-width: $mq_small) {
 
     *{
         color: greenyellow!important;
     }
-}
-// ! Large : 850-1400px
-@media screen and (max-width: $mq_large) {
-
     .container{
-        color: blue!important;
-        // border: solid red 1px!important;
+        padding: 10%;
     }
 }
+
