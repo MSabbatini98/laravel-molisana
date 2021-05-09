@@ -41,3 +41,22 @@ a {
     display: table;
     clear: both;
 }
+
+//!! Media query : 
+// ! Small : 0-450px
+@media screen and (max-width: $mq_medium) {
+
+    *{
+        color: red!important;
+    }
+}
+
+// ! Medium : 451-850px
+@media screen and (max-width: $mq_small) {
+
+    *{
+        color: greenyellow!important;
+    }
+}
+// ! Large : +850px
+//! "normal"

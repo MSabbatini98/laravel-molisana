@@ -6,11 +6,17 @@ $color_nav_hover : #b2e5fc;
 
 $color_footer : #848d9b;
 
-//* DIV Sizes
-$container: 1200px;
-
 //* Text sizes
 $small_footer : 14px;
 $titles : 22px;
 $img_text : 18px;
 $titles_h2 : 26px;
+
+
+// *Media Query 
+$mq_medium : 850px;
+$mq_small : 450px;
+// $mq_large : 850px;
+
+//* DIV Sizes
+$container: 1200px;

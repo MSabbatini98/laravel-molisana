@@ -78,6 +78,16 @@ a {
   clear: both;
 }
 
+@media screen and (max-width: 850px) {
+  * {
+    color: red !important;
+  }
+}
+@media screen and (max-width: 450px) {
+  * {
+    color: greenyellow !important;
+  }
+}
 header .logo {
   text-align: center;
 }
