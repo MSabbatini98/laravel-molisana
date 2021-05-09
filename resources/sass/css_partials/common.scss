@@ -21,6 +21,7 @@ h3 {
 .container {
     max-width: $container;
     width: 100%;
+    padding: 50px;
     margin: 0 auto;
 }
 .active {
@@ -58,5 +59,11 @@ a {
         color: greenyellow!important;
     }
 }
-// ! Large : +850px
-//! "normal"
+// ! Large : 850-1400px
+@media screen and (max-width: $mq_large) {
+
+    .container{
+        color: blue!important;
+        // border: solid red 1px!important;
+    }
+}

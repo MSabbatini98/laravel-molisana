@@ -2,7 +2,7 @@
     <footer>
         <div class="container clearfix">
             <div class="info">
-                <img src=" {{ asset('images/marchio-sito-test.png') }} " alt="Logo della pasta molisana">
+                <img class ="logo_foot" src=" {{ asset('images/marchio-sito-test.png') }} " alt="Logo della pasta molisana">
                 <ul>
                     <li>
                         Ragione Sociale: {{$informazioni['r_s'] }}

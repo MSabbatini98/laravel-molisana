@@ -11,6 +11,11 @@ footer {
         padding: 20px;
         margin-top: 30px;
         // border: 2px solid red;
+
+        .logo_foot{
+            width: 100%;
+            min-width: 200px;
+        }
     }
     .footer_menu {
         width: 66%;
@@ -20,12 +25,13 @@ footer {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
+        padding-left: 30px;
 
         .column {
             margin-top: 30px;
             // border: 2px solid greenyellow;
             width: 50%;
-            padding: 20px;
+            padding: 15px;
         }
         .column1 {
             order: 1;
@@ -48,5 +54,35 @@ footer {
                 margin-top: 20px;
             }
         }        
+    }
+}
+
+
+//! Media query : Medium
+@media screen and (max-width: $mq_medium) {
+
+    footer {
+        .info,
+        .footer_menu {
+            margin-top: 30px;
+            // border: 2px solid greenyellow;
+            width: 100%;
+            padding: 15px;
+        }
+        .info{
+            max-width: 500px;
+
+            img {
+                max-width: 340px;
+            }
+        }
+        .footer_menu{
+
+            .column {
+                width: 100%;
+                padding: 0;
+            }
+        }
+        
     }
 }
