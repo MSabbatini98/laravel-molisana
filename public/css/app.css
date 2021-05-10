@@ -184,6 +184,40 @@ header .main_nav_burger {
     color: greenyellow !important;
   }
 }
+.FadeInTop {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: cubic-bezier(0.25, 0, 0.15, 1);
+          animation-timing-function: cubic-bezier(0.25, 0, 0.15, 1);
+  -webkit-animation-name: fadeInTop;
+          animation-name: fadeInTop;
+}
+
+@-webkit-keyframes fadeInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  75% {
+    transform: none;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  75% {
+    transform: none;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 main {
   background-image: url("/images/fondo-pag-speciali.jpg");
   background-position: center;

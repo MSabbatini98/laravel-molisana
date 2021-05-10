@@ -4,7 +4,7 @@
             <img class ="logo_foot" src=" {{ asset('images/marchio-sito-test.png') }} " alt="Logo della pasta molisana">
             <ul>
                 <li>
-                    Ragione Sociale: {{$informazioni['r_s'] }}
+                    Ragione Sociale: {{ $informazioni['r_s'] }}
                 </li>
                 <li>
                     Sede Legale : {{$informazioni['sede'] }}
