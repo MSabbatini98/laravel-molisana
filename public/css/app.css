@@ -218,7 +218,7 @@ header .main_nav_burger {
     opacity: 1;
   }
 }
-main {
+main .bg {
   background-image: url("/images/fondo-pag-speciali.jpg");
   background-position: center;
   padding: 20px 0;
@@ -234,6 +234,23 @@ main .box_container .box {
 }
 main .box_container .box img {
   display: block;
+  width: 100%;
+}
+main .product {
+  color: #467c9a;
+}
+main .product .back_img {
+  background-color: #b7dae5;
+  position: relative;
+}
+main .product .back_img h1 {
+  padding: 30px 0;
+  font-size: 22px;
+  text-align: center;
+  top: 30px;
+}
+main .product .back_img img {
+  padding-top: 20px;
   width: 100%;
 }
 

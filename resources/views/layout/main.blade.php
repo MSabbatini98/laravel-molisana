@@ -28,7 +28,7 @@
     </main>
 
     {{-- FOOTER  --}}
-    @include('blade_partials.footer')
+    {{-- @include('blade_partials.footer') --}}
 
 </body>
 </html>

@@ -7,6 +7,6 @@
 
 @section('main')
     <h1>
-        NEWS BITCH
+        NEWS
     </h1>
 @endsection

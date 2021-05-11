@@ -11,13 +11,14 @@
         <nav class="main_nav">
             <ul>
                 <li >
-                    <a href="#">Home</a>
+                    <a href="{{ route('home')}}">Home</a>
                 </li>
                 <li class="active">
-                    <a href="#">Prodotti</a>
+                    Prodotti
+                    {{-- <a href="{{ route('prodotto/{id}')}}">Prodotti</a> --}}
                 </li>
                 <li>
-                    <a href="#">News</a>
+                    <a href="{{ route('news')}}">News</a>
                 </li>
             </ul>
         </nav>     

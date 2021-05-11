@@ -303,7 +303,9 @@ Route::get('/prodotto/{id}', function ($id) {
         ]
     ];
 
-    $pasta = $data['id'];
+    $pasta = $data[$id];
+    
+    // dd($id);
 
     return view('prodotto', [
         'pasta' => $pasta

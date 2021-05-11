@@ -1,7 +1,9 @@
 main {
-    background-image: url("/images/fondo-pag-speciali.jpg");
-    background-position: center;
-    padding: 20px 0;
+    .bg{
+        background-image: url("/images/fondo-pag-speciali.jpg");
+        background-position: center;
+        padding: 20px 0;
+    }
 
     .box_container {
         margin: 10px 0;
@@ -14,6 +16,27 @@ main {
 
             img {
                 display: block;
+                width: 100%;
+            }
+        }
+    }
+//!! Routes:
+    //* Prodotto
+    .product {
+        color: $main_color;
+
+        .back_img{
+            background-color: $secondary_color_light;
+            position: relative;
+
+            h1{
+                padding: 30px 0;
+                font-size: $titles;
+                text-align: center;
+                top: 30px;
+            }
+            img{
+                padding-top: 20px;
                 width: 100%;
             }
         }
