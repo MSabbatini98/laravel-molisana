@@ -2,11 +2,15 @@
 
 {{-- * TITLE  * --}}
 @section('page_title')
-    Home | La Molisana
+    News | La Molisana
 @endsection
 
 @section('main')
-    <h1>
-        NEWS
-    </h1>
+    <div class="news ">
+        <div class="container">
+            <h1>
+                NEWS DEL GIORNO!
+            </h1>
+        </div>
+    </div>
 @endsection

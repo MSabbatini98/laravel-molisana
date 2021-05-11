@@ -14,21 +14,26 @@
             <h2>Le lunghe</h2>
             <div class="box_container">
             
-                @foreach ($lunghe as $item)
+                @foreach ($lunghe as $pasta)
                     <div class="box">
-                        <img src= " {{ $item['src'] }} " alt= " {{ $item['titolo'] }} ">
+                        <a href=" {{ route('prodotto', [ 'id' => $pasta['id'] ]) }} ">
+                            <img src=" {{ $pasta['src'] }} " alt=" {{ $pasta['titolo'] }} ">
+                        </a>
                     </div>
                 @endforeach
             </div>
         </section>
+
         {{-- pasta corta --}}
         <section id="pasta_corta">
             <h2>Le corte</h2>
             <div class="box_container">
             
-                @foreach ($corte as $item)
+                @foreach ($corte as $pasta)
                     <div class="box">
-                        <img src= " {{ $item['src'] }} " alt= " {{ $item['titolo'] }} ">
+                        <a href=" {{ route('prodotto', [ 'id' => $pasta['id'] ]) }} ">
+                            <img src=" {{ $pasta['src'] }} " alt=" {{ $pasta['titolo'] }} ">
+                        </a>
                     </div>
                 @endforeach
     
@@ -42,11 +47,14 @@
             
                 @foreach ($cortissime as $item)
                     <div class="box">
-                        <img src= " {{ $item['src'] }} " alt= " {{ $item['titolo'] }} ">
+                        <a href=" {{ route('prodotto', [ 'id' => $pasta['id'] ]) }} ">
+                            <img src=" {{ $pasta['src'] }} " alt=" {{ $pasta['titolo'] }} ">
+                        </a>
                     </div>
                 @endforeach
             </div>
         </section>
+        
     </div>
 </div>
 

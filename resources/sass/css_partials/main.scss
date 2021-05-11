@@ -1,7 +1,7 @@
 main {
     .bg{
         background-image: url("/images/fondo-pag-speciali.jpg");
-        background-position: center;
+        // background-position: center;
         padding: 20px 0;
     }
 
@@ -24,21 +24,50 @@ main {
     //* Prodotto
     .product {
         color: $main_color;
+        background-color: $secondary_color_light;
 
         .back_img{
-            background-color: $secondary_color_light;
             position: relative;
 
             h1{
                 padding: 30px 0;
-                font-size: $titles;
+                font-size: $product_h1;
                 text-align: center;
                 top: 30px;
             }
             img{
-                padding-top: 20px;
                 width: 100%;
             }
+            p {
+                font-size: $product_text;
+                line-height: 1.7;
+                padding: 0 20px;
+            }
+
+            .product_arrow {
+                position: absolute;
+                top: 50%;
+                font-size: 40px;
+                color: white;
+                padding: 10px 15px;
+                background-color: #dcedf2;
+
+
+                &.right {
+                    right: 30px;
+                }
+                &.left {
+                    left: 30px;
+                }
+            }
+        }
+    }
+    // * News
+    .news{
+        height: 60vh;
+        background-color:$secondary_color_light;
+        h1, p{
+            color: $main_color;
         }
     }
 }
