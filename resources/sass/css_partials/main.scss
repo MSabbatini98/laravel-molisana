@@ -1,7 +1,7 @@
 main {
     .bg{
         background-image: url("/images/fondo-pag-speciali.jpg");
-        // background-position: center;
+        background-position: right;
         padding: 20px 0;
     }
 
@@ -74,11 +74,6 @@ main {
 
 
 //!! Media query : 
-// ! Large : 0-1400px
-@media screen and (max-width: $mq_large) {
-
-
-}
 
 // ! Medium : 0-850px
 @media screen and (max-width: $mq_medium) {
@@ -89,6 +84,9 @@ main {
                 width: calc(50% - 15px);
             }
         }
+    }
+    .container{
+        padding: 5%;
     }
 }
 
@@ -101,6 +99,9 @@ main {
                 width: 100%;
             }
         }
+    }
+    .container{
+        padding: 10%;
     }
 }
 

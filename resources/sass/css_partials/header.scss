@@ -72,21 +72,9 @@ header {
 
 
 //!! Media query : 
-// ! Large : 0-1400px
-@media screen and (max-width: $mq_large) {
-
-    *{
-        color: blue!important;
-    }
-    
-}
 
 // ! Medium : 0-850px
 @media screen and (max-width: $mq_medium) {
-
-    *{
-        color: red!important;
-    }
     header {
         .main_nav {
             // border: blue 2px solid;
@@ -101,15 +89,6 @@ header {
         }
     }
     
-}
-
-// ! Small : 0-450px
-@media screen and (max-width: $mq_small) {
-
-    *{
-        color: greenyellow!important;
-    }
-
 }
 
 // ?? Animations 

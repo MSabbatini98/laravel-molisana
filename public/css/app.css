@@ -79,29 +79,6 @@ a {
   clear: both;
 }
 
-@media screen and (max-width: 1400px) {
-  * {
-    color: blue !important;
-  }
-}
-@media screen and (max-width: 850px) {
-  * {
-    color: red !important;
-  }
-
-  .container {
-    padding: 5%;
-  }
-}
-@media screen and (max-width: 450px) {
-  * {
-    color: greenyellow !important;
-  }
-
-  .container {
-    padding: 10%;
-  }
-}
 header .container {
   padding: 0px;
 }
@@ -161,27 +138,13 @@ header .main_nav_burger {
   color: #002d73;
 }
 
-@media screen and (max-width: 1400px) {
-  * {
-    color: blue !important;
-  }
-}
 @media screen and (max-width: 850px) {
-  * {
-    color: red !important;
-  }
-
   header .main_nav ul {
     display: none;
   }
   header .main_nav_burger {
     margin-top: 30px;
     display: block;
-  }
-}
-@media screen and (max-width: 450px) {
-  * {
-    color: greenyellow !important;
   }
 }
 .FadeInTop {
@@ -220,6 +183,7 @@ header .main_nav_burger {
 }
 main .bg {
   background-image: url("/images/fondo-pag-speciali.jpg");
+  background-position: right;
   padding: 20px 0;
 }
 main .box_container {
@@ -282,10 +246,18 @@ main .news h1, main .news p {
   main .box_container .box {
     width: calc(50% - 15px);
   }
+
+  .container {
+    padding: 5%;
+  }
 }
 @media screen and (max-width: 450px) {
   main .box_container .box {
     width: 100%;
+  }
+
+  .container {
+    padding: 10%;
   }
 }
 footer {
